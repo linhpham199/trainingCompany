@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 import * as routes from './constants/routes';
 import Navigation from './component/Navigation';
 import Trainings from './component/Trainings';
@@ -40,7 +40,7 @@ class App extends Component {
         <header className="App-header"> 
           <h1 classNaBrowserRouterme="App-title">Personal Trainer Company</h1>
         </header>
-        <BrowserRouter>
+        <HashRouter>
           <div>
             <nav className="navbar navbar-expand-sm navbar-light bg-light">
                 {/* <Navigation authUser={this.state.authUser}/> */}
@@ -58,7 +58,7 @@ class App extends Component {
               <Route path={routes.PASSWORD_FORGET} component={PasswordForgetPage}/>
             </Switch>   
           </div>
-        </BrowserRouter>
+        </HashRouter>
             
           
         
