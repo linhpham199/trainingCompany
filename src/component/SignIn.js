@@ -72,7 +72,7 @@ class SignInForm extends Component {
                         <div className="form-group col-sm-4"></div>
                         <div className="form-group col-sm-4"></div>
                         <div className="form-group col-sm-4">
-                            <input value={password} placeholder="Password" className="form-control" name="password" onChange={this.handleChange}/>
+                            <input value={password} placeholder="Password" type="password" className="form-control" name="password" onChange={this.handleChange}/>
                         </div>
                         <div className="form-group col-sm-4"></div>
                     </div>
